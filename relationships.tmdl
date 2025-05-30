@@ -1,0 +1,10 @@
+relationship cfde5162-4802-4337-9a69-8cd5ffee821d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Table1.'Accident Date'
+	toColumn: LocalDateTable_25813dcb-994f-405c-b4f9-1d8e7df250f0.Date
+
+relationship fe600020-91ed-432f-9fdb-62f3b997525e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Table1.Time
+	toColumn: LocalDateTable_fbf5cbc8-ec2c-4047-ab87-7380b7e6c42d.Date
+

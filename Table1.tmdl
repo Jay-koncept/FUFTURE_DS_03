@@ -1,0 +1,204 @@
+table Table1
+	lineageTag: b2145aa1-4a9f-46a0-86ed-ebc8d536f2d3
+
+	column Accident_Index
+		dataType: string
+		lineageTag: 6091508d-c935-4f5b-88bf-537e7f728f99
+		summarizeBy: none
+		sourceColumn: Accident_Index
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Accident Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 12c0d3d9-28ec-469a-92b5-cf1653927b97
+		summarizeBy: none
+		sourceColumn: Accident Date
+
+		variation Variation
+			isDefault
+			relationship: cfde5162-4802-4337-9a69-8cd5ffee821d
+			defaultHierarchy: LocalDateTable_25813dcb-994f-405c-b4f9-1d8e7df250f0.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Day_of_Week
+		dataType: string
+		lineageTag: 408ffcee-a337-477f-922f-41d2a856f56e
+		summarizeBy: none
+		sourceColumn: Day_of_Week
+
+		annotation SummarizationSetBy = Automatic
+
+	column Junction_Control
+		dataType: string
+		lineageTag: 1f62c9fa-eb6d-4caa-b472-f521f34af71d
+		summarizeBy: none
+		sourceColumn: Junction_Control
+
+		annotation SummarizationSetBy = Automatic
+
+	column Junction_Detail
+		dataType: string
+		lineageTag: 37a92ae8-07ed-47fc-af05-3ab16b6c2d08
+		summarizeBy: none
+		sourceColumn: Junction_Detail
+
+		annotation SummarizationSetBy = Automatic
+
+	column Accident_Severity
+		dataType: string
+		lineageTag: 4a523226-8137-4eef-9728-777a0b4ec20f
+		summarizeBy: none
+		sourceColumn: Accident_Severity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Latitude
+		dataType: double
+		lineageTag: d5665ddb-acaf-4bdc-b4dd-f8060a7e93d2
+		summarizeBy: sum
+		sourceColumn: Latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Light_Conditions
+		dataType: string
+		lineageTag: ef13db28-a54c-478e-84cd-07d0657c4dfa
+		summarizeBy: none
+		sourceColumn: Light_Conditions
+
+		annotation SummarizationSetBy = Automatic
+
+	column Local_Authority_(District)
+		dataType: string
+		lineageTag: 79f12fd9-eccd-45c6-a225-63615aee1e9a
+		summarizeBy: none
+		sourceColumn: Local_Authority_(District)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carriageway_Hazards
+		dataType: string
+		lineageTag: b7400f00-a6a4-443a-85a4-72873c10e6a9
+		summarizeBy: none
+		sourceColumn: Carriageway_Hazards
+
+		annotation SummarizationSetBy = Automatic
+
+	column Longitude
+		dataType: double
+		lineageTag: a9c60f48-a16d-4d80-b0a7-78b4a4970468
+		summarizeBy: sum
+		sourceColumn: Longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Number_of_Casualties
+		dataType: int64
+		formatString: 0
+		lineageTag: 89efa688-c8c4-4434-b50b-519eaf9d0043
+		summarizeBy: sum
+		sourceColumn: Number_of_Casualties
+
+		annotation SummarizationSetBy = Automatic
+
+	column Number_of_Vehicles
+		dataType: int64
+		formatString: 0
+		lineageTag: 58164eb2-bb4a-474b-a738-ccfb901d941f
+		summarizeBy: sum
+		sourceColumn: Number_of_Vehicles
+
+		annotation SummarizationSetBy = Automatic
+
+	column Police_Force
+		dataType: string
+		lineageTag: c17a3edb-76ad-45bc-b315-edf5972683b7
+		summarizeBy: none
+		sourceColumn: Police_Force
+
+		annotation SummarizationSetBy = Automatic
+
+	column Road_Surface_Conditions
+		dataType: string
+		lineageTag: 5835c7fc-5e39-48b1-af38-7b5a92ac834e
+		summarizeBy: none
+		sourceColumn: Road_Surface_Conditions
+
+		annotation SummarizationSetBy = Automatic
+
+	column Road_Type
+		dataType: string
+		lineageTag: 1203ccd4-4bff-4289-9ff0-3f3d5994b7eb
+		summarizeBy: none
+		sourceColumn: Road_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Speed_limit
+		dataType: int64
+		formatString: 0
+		lineageTag: 581ca5b3-e042-4800-a2f5-3ec74b7cd234
+		summarizeBy: sum
+		sourceColumn: Speed_limit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 01dec240-2d0f-4c3f-934f-79dede54ade8
+		summarizeBy: none
+		sourceColumn: Time
+
+		variation Variation
+			isDefault
+			relationship: fe600020-91ed-432f-9fdb-62f3b997525e
+			defaultHierarchy: LocalDateTable_fbf5cbc8-ec2c-4047-ab87-7380b7e6c42d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Urban_or_Rural_Area
+		dataType: string
+		lineageTag: 4b945618-e35e-46cd-a486-a47f8f33a04b
+		summarizeBy: none
+		sourceColumn: Urban_or_Rural_Area
+
+		annotation SummarizationSetBy = Automatic
+
+	column Weather_Conditions
+		dataType: string
+		lineageTag: 1f39e7ff-ea95-476b-9c44-fb5fd8d3303c
+		summarizeBy: none
+		sourceColumn: Weather_Conditions
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vehicle_Type
+		dataType: string
+		lineageTag: affcd40e-d22c-48b8-b9dd-77aa0fe3f706
+		summarizeBy: none
+		sourceColumn: Vehicle_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Table1 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\User\Desktop\Future tasks\Road Accident Data.xlsx"), null, true),
+				    Table1_Table = Source{[Item="Table1",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Table1_Table,{{"Accident_Index", type text}, {"Accident Date", type date}, {"Day_of_Week", type text}, {"Junction_Control", type text}, {"Junction_Detail", type text}, {"Accident_Severity", type text}, {"Latitude", type number}, {"Light_Conditions", type text}, {"Local_Authority_(District)", type text}, {"Carriageway_Hazards", type text}, {"Longitude", type number}, {"Number_of_Casualties", Int64.Type}, {"Number_of_Vehicles", Int64.Type}, {"Police_Force", type text}, {"Road_Surface_Conditions", type text}, {"Road_Type", type text}, {"Speed_limit", Int64.Type}, {"Time", type datetime}, {"Urban_or_Rural_Area", type text}, {"Weather_Conditions", type text}, {"Vehicle_Type", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
